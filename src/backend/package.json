@@ -1,0 +1,29 @@
+{
+  "name": "uscribed-backend-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-mysql-session": "^3.0.0",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.3.1",
+    "nodemon": "^3.0.1",
+    "openai": "^4.3.0",
+    "stripe": "^13.5.0",
+    "updated-youtube-info": "^1.4.7",
+    "youtube-transcript": "^1.0.6"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

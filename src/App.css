@@ -1,0 +1,315 @@
+.darkMode{
+  background-color: rgb(28, 28, 28);
+  color: white;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.main{
+  margin-right: 1em;
+  margin-left: 0.5em;
+}
+
+.header-group{
+  display: flex;
+  align-items: center;
+  /* justify-content: center;  */
+}
+.header-group h2 {
+  margin: 0;  /* this removes all the default margins of h2 */
+}
+
+.login-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.settingsDiv{
+  top: 0;
+  right: 0;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.button2 {
+  color: black;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background: orange;
+  font-weight: bold;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+}
+.button2:hover{
+  background: rgb(255, 196, 86);
+}
+
+.logo {
+  width: 2em;
+}
+.icons {
+  width: 2em;
+  border: 0.05em solid transparent;
+}
+.icons:hover {
+  cursor: pointer;
+  border: 0.05em solid gray;
+  /* box-shadow: 0 2px 5px 1px rgb(125, 125, 125); */
+  border-radius: 0.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  padding: 1em;
+  border-radius: 0.25em;
+  border: 0.2em solid rgba(43, 43, 43, 0.8);
+  box-shadow: .5rem .5rem 0 rgba(15, 15, 15, 0.8);
+}
+
+.inputDiv{
+  position: relative;
+  margin-bottom: 1em;
+}
+.inputDiv label{
+  /* position: absolute;
+  left: 0.5em;
+  top: 0.5em; */
+  padding: 0.2em;
+  white-space: nowrap;
+  font-weight: bold;
+  border-radius: 0.25em;
+}
+.inputDiv input[type="text"]{
+  margin-top: 0.2em;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 3px solid rgba(43, 43, 43, 0.8);
+  padding: 1em;
+  border-radius: 0.25em;
+  /* border-radius: var(--size-radius); */
+}
+
+.settinsInputDiv{
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.settinsInputDiv label{
+  /* position: absolute;
+  left: 0.5em;
+  top: 0.5em; */
+  padding: 0.2em;
+  white-space: nowrap;
+  font-weight: bold;
+  border-radius: 0.25em;
+}
+.settinsInputDiv .settingsSubmitButton{
+  position: absolute;
+  right: 0.8em;
+  top: 2.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background: rgb(113, 255, 135);
+  font-weight: bold;
+  border-radius: 0.25em;
+  border: none;
+}
+.settinsInputDiv .settingsSubmitButton:hover{
+  background: rgb(139, 255, 156);
+  cursor: pointer;
+}
+.settinsInputDiv .settingsDeleteButton{
+  position: absolute;
+  right: 5.7em;
+  top: 2.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background: orange;
+  font-weight: bold;
+  border-radius: 0.25em;
+  border: none;
+}
+.settinsInputDiv .settingsDeleteButton:hover{
+  background: rgb(255, 196, 86);
+  cursor: pointer;
+}
+.settinsInputDiv input[type="text"]{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 3px solid rgba(43, 43, 43, 0.8);
+  padding: 1em;
+  border-radius: 0.25em;
+  margin-top: 0.2em;
+  /* border-radius: var(--size-radius); */
+}
+
+.noTextSelect {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* pointer-events: none; */
+}
+
+.chatMessageBox {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  border: 1.5px solid rgb(125, 125, 125);
+  border-radius: 0px 0px 0px 0px;
+  /* border-radius: 10px 10px 10px 10px; */
+  width: 98%;
+  height: 5vh;
+  min-width: 98%;
+  max-width: 98%;
+  min-height: 5vh;
+  max-height: 50vh;
+  white-space: pre-wrap;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+.result-thumbnail{
+  border: 0.15em solid rgb(39, 39, 39);
+  width: 100%;
+}
+.result-thumbnail:hover{
+  border: 0.15em solid rgb(255, 0, 0);
+}
+
+.resultsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.result-videoInfo {
+  flex: 1 1 100%;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.result-transcript {
+  flex: 1 1 100%;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.customPromptSettings {
+  flex: 1 1 100%;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+}
+
+/* .loginDiv {
+  flex: 1 1 100%;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.registerDiv {
+  flex: 1 1 100%;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+} */
+
+@media (min-width: 768px) {
+  .result-videoInfo {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .result-transcript {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 2em;
+    margin: 0 auto; /* Centering */
+  }
+  /* .loginDiv {
+    flex: 1 1 50%;
+    max-width: 25%;
+  }
+  .registerDiv {
+    flex: 1;
+    padding-left: 2em;
+  } */
+}
+
+.active {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(135, 95, 255);
+  padding: 5px;
+}
+
+.icon-active {
+  border: 0.05em solid gray;
+  border-radius: 0.2em;
+}
+
+hr{
+  color:rgba(126, 126, 126, 0.4); 
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --color-light: white;
+  --color-dark: #212121;
+  --color-signal: #fab700;
+  
+  --color-background: var(--color-light);
+  --color-text: var(--color-dark);
+  --color-accent: var(--color-signal);
+  
+  --size-bezel: .5rem;
+  --size-radius: 4px;
+}
+
+.spinner {
+  animation: spin 2s linear infinite;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .15em; */
+  animation: 
+  typing 2.5s steps(40, end) infinite,
+  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
